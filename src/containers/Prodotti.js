@@ -1,7 +1,10 @@
-import React from "react";
+import React from 'react';
+import { Row } from 'react-bootstrap';
 
 export const Prodotti = () => {
-    return (
-        <h1>Prodotti</h1>
-    )
-}
+  return (
+    <Row className="top-header">
+      <h1>Prodotti</h1>
+    </Row>
+  );
+};
