@@ -1,18 +1,16 @@
 import React from 'react';
-import { Row, Form, Card, Col } from 'react-bootstrap';
-
+import { Row, Container, Card, Col } from 'react-bootstrap';
+import './Contatti.css'
 export const Contatti = () => {
   return (
-    <div>
-      <Row className="top-header">
-        <h1>Contatti</h1>
-      </Row>
+    <Container>
+      <h1 className="top-header">Contatti</h1>
       <Row>
-        <Col>
-          <Card>
+        <Col sm={12}>
+          <Card className="card-layout">
             <Card.Header as="h5">Maurizio Negroni</Card.Header>
             <Card.Body>
-              <Card.Title>Capo assoluto</Card.Title>
+              <Card.Title>Technical leader</Card.Title>
               <Card.Text>
                 With supporting text below as a natural lead-in to additional content.
             </Card.Text>
@@ -20,11 +18,11 @@ export const Contatti = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card>
+        <Col sm={12}>
+          <Card className="card-layout">
             <Card.Header as="h5">Monica Medici</Card.Header>
             <Card.Body>
-              <Card.Title>Contabile, Head of business Management</Card.Title>
+              <Card.Title>Head of Business Management</Card.Title>
               <Card.Text>
                 With supporting text below as a natural lead-in to additional content.
             </Card.Text>
@@ -33,7 +31,7 @@ export const Contatti = () => {
           </Card>
         </Col>
       </Row>
-      Mail: <a href="mailto:info@nemesi.biz">info@nemesi.biz</a>
-    </div>
+      Per info contattare alla mail: <a href="mailto:info@nemesi.biz">info@nemesi.biz</a>
+    </Container>
   );
 };
