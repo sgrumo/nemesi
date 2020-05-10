@@ -2,9 +2,9 @@
 @import './font.css';
 
 :root {
-  --main-bg-color: #001c82;
-  --main-text-color: #ff9900;
-  --secondary-color: #4a82ff;
+  --main-bg-color: #29426b;
+  --main-text-color: #f8a61c;
+  --secondary-color: #527abd;
 }
 body {
   margin: 0;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Form } from 'react-bootstrap';
+import { Row, Form, Card, Col } from 'react-bootstrap';
 
 export const Contatti = () => {
   return (
@@ -8,23 +8,32 @@ export const Contatti = () => {
         <h1>Contatti</h1>
       </Row>
       <Row>
-        Maurizio Negroni Telefono:{' '}
-        <a href="tel:+393703242449">+39 3703242449</a>
-        Monica Medici Telefono: <a href="tel:+393387550692">+39 3387550692</a>
-        <a href="mailto:info@nemesi.biz">info@nemesi.biz</a>
+        <Col>
+          <Card>
+            <Card.Header as="h5">Maurizio Negroni</Card.Header>
+            <Card.Body>
+              <Card.Title>Capo assoluto</Card.Title>
+              <Card.Text>
+                With supporting text below as a natural lead-in to additional content.
+            </Card.Text>
+            Per info contattare: <a href="tel:+393703242449">+39 3703242449</a>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card>
+            <Card.Header as="h5">Monica Medici</Card.Header>
+            <Card.Body>
+              <Card.Title>Contabile, Head of business Management</Card.Title>
+              <Card.Text>
+                With supporting text below as a natural lead-in to additional content.
+            </Card.Text>
+              Per info contattare: <a href="tel:+393387550692">+39 3387550692</a>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
-      <Row>
-        <Form>
-          <Form.Group controlId="mail-message">
-            <Form.Label>Corpo del messaggio:</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows="5"
-              placeholder="Inserire qui il messaggio da inviare"
-            ></Form.Control>
-          </Form.Group>
-        </Form>
-      </Row>
+      Mail: <a href="mailto:info@nemesi.biz">info@nemesi.biz</a>
     </div>
   );
 };
